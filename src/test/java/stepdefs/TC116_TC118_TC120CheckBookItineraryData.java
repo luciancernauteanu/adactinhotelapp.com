@@ -281,6 +281,7 @@ public class TC116_TC118_TC120CheckBookItineraryData {
         //org.junit.ComparisonFailure: expected:<AUD $ 14[8.5]> but was:<AUD $ 14[9]>
 
 //       Assert.assertEquals(totalPriceWithGST,totalPriceBookedIt.getAttribute("value"));
+        driver.close();
     }
 
     ///////My methods
