@@ -21,7 +21,7 @@ public class TC101HotelBookingAppLogin {
     }
     @Then("Login to the application using username and password as in test data.")
     public void hotelAppLogIn(){
-        loginToWebsite("xyzusername", "xyzpassword");
+        loginToWebsite("xyzusername", "xyzpassword");  
         driver.close();
     }
 
@@ -30,6 +30,8 @@ public class TC101HotelBookingAppLogin {
         driver.manage().window().maximize();
         driver.get(s);
     }
+    
+    //My method
     public void loginToWebsite(String user, String pass) {
 
         WebElement username = driver.findElement(By.id("username"));
@@ -39,6 +41,6 @@ public class TC101HotelBookingAppLogin {
 
         WebElement loginButton = driver.findElement(By.id("login"));
         loginButton.click();
-        Assert.assertEquals("AdactIn.com - Search Hotel", driver.getTitle());
+        Assert.assertEquals("AdactIn.com - Search Hotel", driver.getTitle());  
     }
 }
