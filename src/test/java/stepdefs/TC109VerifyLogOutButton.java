@@ -133,6 +133,7 @@ public class TC109VerifyLogOutButton {
 
         WebElement linkText = driver.findElement(By.className("reg_success"));
         Assert.assertEquals("You have successfully logged out. Click here to login again", linkText.getText());
+        driver.close();
     }
 
     ///////My methods
