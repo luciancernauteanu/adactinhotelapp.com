@@ -157,8 +157,8 @@ public class TC117_TC119SearchAndCancelOrderId {
     public void orderIdInfoIsDisplayed (){
         WebElement orderIdSearched = driver.findElement(By.xpath("/html/body/table[2]/tbody/tr[2]/td/form/table/tbody/tr[2]/td/table/tbody/tr[2]/td[2]/input"));
         orderNumber = orderIdSearched.getAttribute("value");
-
         Assert.assertEquals(generatedOrderNumber,orderNumber);
+        driver.close();
     }
 
     ////Scenario ====> TC119
@@ -169,9 +169,8 @@ public class TC117_TC119SearchAndCancelOrderId {
         cancelButton.click();
         Alert alert = driver.switchTo().alert();
         alert.accept();
-
         Assert.assertTrue(!driver.getPageSource().contains(orderNumber));
-
+        driver.close();
     }
 
 
