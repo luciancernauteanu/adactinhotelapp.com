@@ -173,6 +173,7 @@ public class TC111_TC114VerifyDataInBothPages {
 
         ////Bug identified -----> Total Days field is not implemented in Booking Confirmation
         ////Assert to be executed after the bug is fixed
+        driver.close();
     }
 
     ////Scenario ====> TC114////
@@ -184,8 +185,7 @@ public class TC111_TC114VerifyDataInBothPages {
 
         WebElement orderNumber = driver.findElement(By.id("order_no"));
         Assert.assertNotNull(orderNumber.getAttribute("value"));
-//
-
+        driver.close();
     }
 
     ///////My methods
