@@ -132,6 +132,7 @@ public class TC108_TC112VerifyPrices {
 
         //The test failed ----Total price is not updated correctly (the number of rooms * price per night is not calculated correctly)
         //Bug to be fixed!
+        driver.close();
     }
 
     ////Scenario ====> TC112////
@@ -171,6 +172,7 @@ public class TC108_TC112VerifyPrices {
         //The test failed (org.junit.ComparisonFailure: expected:<[275.0]> but was:<[148.5]>)
         //Final Billed Price is not updated correctly (the number of rooms * price per night + GST is not calculated correctly)
         //Assert to be executed after bug is fixed
+        driver.close();
     }
 
     ///////My methods
