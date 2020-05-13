@@ -145,6 +145,7 @@ public class TC104_TC105_TC106_TC107DataInSelectHotelSameAsSelectHotel {
     public void verifyRoomTypeIsDisplayedOnBothPage (){
         WebElement roomTypeSelectedHotelPage = driver.findElement(By.id("room_type_0"));
         Assert.assertEquals(verifyRoomType, roomTypeSelectedHotelPage.getAttribute("value"));
+        driver.close();
     }
 
     ///////My methods
