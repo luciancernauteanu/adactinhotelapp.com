@@ -101,8 +101,8 @@ public class TC104_TC105_TC106_TC107DataInSelectHotelSameAsSelectHotel {
     public void verifyIfHotelIsDisplayedOnBothPage (){
 
       WebElement selectHotelPage = driver.findElement(By.id("hotel_name_0"));
-
-        Assert.assertEquals(selectHotelPage.getAttribute("value"),verifyHotel);
+      Assert.assertEquals(selectHotelPage.getAttribute("value"),verifyHotel);
+      driver.close();
     }
 
     ////Scenario ====> TC105////
