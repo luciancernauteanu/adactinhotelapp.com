@@ -22,7 +22,7 @@ public class TC101HotelBookingAppLogin {
     @Then("Login to the application using username and password as in test data.")
     public void hotelAppLogIn(){
         loginToWebsite("xyzusername", "xyzpassword");
-//        driver.close();
+        driver.close();
     }
 
 
