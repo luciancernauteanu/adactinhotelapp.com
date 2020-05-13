@@ -160,9 +160,7 @@ public class TC115ItineraryDetails {
         // Bug(1) identified in Booked Itinerary page (All booking information fields on Booked Itinerary page is editable)
         // java.lang.AssertionError
         ///Assert to be executed after bug has fixed
-//
-
-
+        driver.close();
     }
 
     ///////My methods
